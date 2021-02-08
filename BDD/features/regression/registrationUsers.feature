@@ -9,7 +9,6 @@ Feature: Register on the website
   Enter the emailId and click on Create an account button
      When I entering email address as "testtest65@gmail.com"
      When I Click Create an Account on the AUTHENTICATION section
-     Then I should see page with title "CREATE AN ACCOUNT"
 
   Scenario:
   Enter the personal details and click on click Register button

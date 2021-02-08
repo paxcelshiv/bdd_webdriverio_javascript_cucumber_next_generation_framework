@@ -26,12 +26,6 @@ When(/^I Click Create an Account on the AUTHENTICATION section$/, function () {
   $("#SubmitCreate > span").click();
 });
 
-Then(/^I should see page with title \"([^\"]*)\"$/,
-  function (registrationHeader) {
-    user.validateregistrationpage(registrationHeader);
-  }
-);
-
 When(/^I Enter details in the Your Personal Information section$/,
   function (dataTable) {
     user.fillregistrationpage(dataTable);

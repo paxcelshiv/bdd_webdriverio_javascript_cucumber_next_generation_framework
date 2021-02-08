@@ -20,12 +20,13 @@ module.exports =class UserRegistration {
     console.log(randonemail);
     $('#email_create').setValue(randonemail);
     }
-    validateregistrationpage(actualmsg){
-   $('#noSlide > h1').scrollIntoView(); 
+    validateregistrationpage_header(actualmsg){
+    $('#noSlide > h1').scrollIntoView(); 
     const text1 = $('#noSlide > h1').getText();
     console.log("Actual value :"+text1+" Expected value :"+registrationHeader);
     //registrationHeader.should.equal(text1);
     }
+
     fillregistrationpage(dataTable){
         const userDetails = dataTable.rowsHash();
         // check radio button for gender

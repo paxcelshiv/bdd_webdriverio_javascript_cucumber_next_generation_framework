@@ -14,7 +14,7 @@ When(/^I Click SignIn on the Home page$/, function () {
 
 Then(/^I should validated new page saying as \"([^\"]*)\"$/,
   function (authentication) {
-    validateRegistrationpage(authentication);
+    user.validateRegistrationpage(authentication);
   }
 );
 

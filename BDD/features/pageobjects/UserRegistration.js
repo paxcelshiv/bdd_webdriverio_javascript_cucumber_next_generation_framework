@@ -10,6 +10,7 @@ module.exports =class UserRegistration {
     }
     validateRegistrationpage(actualmsg){
         const text = $('#center_column > h1').getText();
+        console.log(text)
         user.validateCondition(actualmsg,text);
     }
     enteremail(){
